@@ -22,6 +22,7 @@ export default function Strip(props: StripProps) {
         {props.values.map((item, index) => {
           return (
             <div
+              key={index}
               className={` width-1-17-width py-2 flex items-center justify-center text-4xl rounded-xl shrink-0 border-gray-50 border-2 font-bold ${
                 item.isHead ? "bg-[#F9DC5C]" : "bg-[#83B87F]"
               }`}
